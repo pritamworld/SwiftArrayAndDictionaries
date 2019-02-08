@@ -17,6 +17,24 @@ if(true < false)
 }
  */
 
+var s: String = "Hello"
+var str = String()
+str = "Hello World"
+var p: String
+p = "Call Me"
+
+print(s, str, p)
+
+print(str.hasPrefix("Hello"))
+print(s.hasPrefix("Hello"))
+print(p.hasSuffix("Me"))
+
+print(str.lowercased())
+print(str.uppercased())
+
+print(str.description)
+print(s.count)
+
 
 
 
