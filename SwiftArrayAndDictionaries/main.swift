@@ -131,3 +131,26 @@ print(y[3])
 var z = Array<Int>()
 z.append(5000)
 print(z[0])
+
+
+// input a = [1, 2, 3, 4, 5]
+//output x = [120, 60, 40, 30, 24]
+
+let x0 = [1, 2, 3, 4, 5]
+var y0 = Array(repeating: 0, count: x0.count)
+
+for i in 0..<x0.count
+{
+    var t = 1
+    for j in 0..<x0.count
+    {
+        if(j != i)
+        {
+            t *= x0[j]
+        }
+    }
+    y0[i] = t
+}
+
+print(x0)
+print(y0)
