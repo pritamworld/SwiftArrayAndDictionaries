@@ -36,5 +36,33 @@ print(str.description)
 print(s.count)
 
 
+//Display Charactes from String
+for c in str
+{
+    print(c)
+}
+
+var x = 5...10
+
+for i in x
+{
+    print(i)
+}
+
+print(x)
+
+var y = ...50
+
+if( y.contains(-1000))
+{
+    print("TRUE")
+}
+
+if( y.contains(51))
+{
+    print("TRUE")
+}else{
+    print("FALSE")
+}
 
 
