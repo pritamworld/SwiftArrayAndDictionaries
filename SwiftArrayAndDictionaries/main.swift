@@ -42,6 +42,12 @@ for c in str
     print(c)
 }
 
+//Types of Range
+//ClosedRange           e.g. 1...10
+//PartialRangeFrom      e.g. 20...
+//PartialRangeUpTo
+//PartialRangeThrough   e.g. ...50
+
 var x = 5...10
 
 for i in x
@@ -50,6 +56,7 @@ for i in x
 }
 
 print(x)
+
 
 var y = ...50
 
