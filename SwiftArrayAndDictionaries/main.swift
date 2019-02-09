@@ -154,3 +154,75 @@ for i in 0..<x0.count
 
 print(x0)
 print(y0)
+
+//--- SET Example
+print("---- Set Data Structure")
+//NO repeat
+var s1 = Set<String>()
+s1.insert("Canada")
+s1.insert("USA")
+s1.insert("India")
+s1.insert("Russia")
+s1.insert("Brazil")
+s1.insert("China")
+
+print(s1)
+
+//Will not insert
+s1.insert("India")
+print(s1)
+
+//Will insert
+s1.insert("india")
+print(s1)
+
+//----Dictionary Example
+var d = [1 : "Abc",
+         2 :"Hello"]
+print("----Dictionary Example")
+print(d)
+
+d[3] = "Hello World"
+
+print(d)
+
+print(d[4])
+
+var country = Dictionary<String, String>()
+country.updateValue("INDIA", forKey: "IND")
+country.updateValue("China", forKey: "CHI")
+country.updateValue("Brazil", forKey: "BZL")
+country.updateValue("Mexixo", forKey: "MXO")
+
+print(country)
+
+for i in country
+{
+    print(i)
+    print(i.key, i.value)
+}
+
+print("---------------------------------------------")
+for (k, v) in country
+{
+    print(k, v)
+}
+
+print("---------------------------------------------")
+for (_, v) in country
+{
+    print( v)
+}
+
+print("---------------------------------------------")
+for k in country.keys
+{
+    print(k)
+}
+
+print("---------------------------------------------")
+for v in country.values
+{
+    print(v)
+}
+
