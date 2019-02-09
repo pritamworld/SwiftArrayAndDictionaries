@@ -226,3 +226,9 @@ for v in country.values
     print(v)
 }
 
+//Delete all elements/ Clear
+d = [:]
+print(d.count)
+
+d.removeAll()
+
