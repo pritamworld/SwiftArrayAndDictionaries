@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 print("Hello, World!")
 
 /* Will never compiled
@@ -71,5 +71,63 @@ if( y.contains(51))
 }else{
     print("FALSE")
 }
+ 
+ */
+
+//Array
+var a = [10, 20, 30, 40 ,50]
+print(a.count)
+for i in a
+{
+    print(i)
+}
+
+print(a[0], a[1], a[2], a[3], a[4])
+
+//Will not work
+//print(a[5])
+//a[5] = 1000
+//print(a[5])
+
+var b = [Int]()
+
+b.append(100)
+b.append(200)
+b.append(300)
+
+print(b[0], b[1], b[2])
+
+b += [111, 222, 333]
+
+print(b)
+
+print("Values of C array")
+let c = a + b
+
+for i in c
+{
+    print(i)
+}
+
+print("Slice Values of C[1..3] array")
+
+var x = c[1...3]
+print(x)
+x[1] = 2020
+
+for i in x
+{
+    print(i)
+}
+
+print("Slice Values of C[1] array")
+print(c[1])
+
+var y = c[3...10]
+print(y[3])
 
 
+//Declaration using Array<TYPE>()
+var z = Array<Int>()
+z.append(5000)
+print(z[0])
